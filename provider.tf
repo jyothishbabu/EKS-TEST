@@ -45,6 +45,8 @@ provider "kubernetes" {
 
 provider "aws" {
   region = "us-east-1"
+  access_key = "AKIAZYCG44VQVCEZ477C"
+  secret_key = "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"
 }
 
 resource "random_string" "suffix" {
