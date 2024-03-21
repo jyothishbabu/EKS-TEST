@@ -45,8 +45,6 @@ provider "kubernetes" {
 
 provider "aws" {
   region = "us-east-1"
-    AWS_ACCESS_KEY_ID     = credentials('jenkins-aws-secret-key-id')
-    AWS_SECRET_ACCESS_KEY = credentials('jenkins-aws-secret-access-key')
 }
 
 resource "random_string" "suffix" {
